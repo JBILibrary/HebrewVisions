@@ -1,0 +1,228 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.List.*;
+import java.util.*;
+import java.io.*;
+import java.lang.String.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class BrailleConversionServlet extends HttpServlet {
+
+  String userInputFile="test.txt";
+  String userOutputFile="output.txt";
+  Mapping MapArray[];
+
+  //------------------Holds the intger of one Unicode input and the char it maps to.
+  private class Mapping {
+    int numChar;
+    String BrailleChar;
+
+    public String toString(){
+          return Integer.toString(numChar);
+     }
+  }
+
+
+  public void intit(ServletConfig config)
+    throws ServletException
+  {
+    Vector v= new Vector(65,20);
+    int value;
+    Mapping configLine;
+    String configChar;
+
+	System.out.println("Began Config");
+
+    try{//try 1
+
+      FileInputStream fis = new FileInputStream("config.txt");
+	    InputStreamReader isr = new InputStreamReader(fis,"UTF8");
+      BufferedReader in = new BufferedReader(isr);
+
+      //Manually add char mapping for space
+      configLine= new Mapping();
+      configLine.numChar=32;
+      configLine.BrailleChar=" ";
+      v.addElement(configLine);
+
+      //Manually add char mapping for 13 Carrige Return
+      configLine= new Mapping();
+      configLine.numChar=13;
+      configLine.BrailleChar="\r";
+      v.addElement(configLine);
+
+      //Manually add char mapping for Line feed
+      configLine= new Mapping();
+      configLine.numChar=10;
+      configLine.BrailleChar="\n";
+      v.addElement(configLine);
+
+
+      //remove the opening char for begining of file
+      value=in.read();
+
+      while ((value = in.read()) > -1) {
+        configLine= new Mapping();
+        configLine.numChar=value;
+        configChar=in.readLine();
+        if(configChar.length()>=3)
+          configLine.BrailleChar= configChar.substring(1,3).trim();
+        else
+          configLine.BrailleChar= configChar.substring(1,2).trim();
+        v.addElement(configLine);
+      }
+      in.close();
+
+    }catch (IOException e){
+      System.out.println("Error reading config file");
+    }
+
+    v.trimToSize();
+    //-----Convert Vector to an Array------------
+
+     MapArray = new Mapping[v.size()];
+     for (int count=0; count< v.size() ; count++)
+          MapArray[count]=new Mapping();
+     v.toArray(MapArray);
+
+
+     //----Sort the Array---------------------------
+
+     Arrays.sort(MapArray, new Comparator() {
+         int firstNum, secondNum;
+
+          public int compare( Object o1, Object o2) {
+               firstNum=Integer.parseInt( o1.toString());
+               secondNum=Integer.parseInt(o2.toString());
+               if(firstNum<secondNum)
+                return -1;
+               if(firstNum>secondNum)
+                return +1;
+               return 0;
+     		}//close compare
+ 	}//close comparator
+ 	);//close sort statement
+
+  }//init-config
+
+  public void doPost(HttpServletRequest rq, HttpServletResponse rs)
+    throws ServletException, IOException
+  {
+
+    PrintWriter output = rs.getWriter();
+    rs.setContentType("text/html");
+    output.println("something happened");
+    output.close();
+
+
+    int ch;                         //unicode char read from file
+    int location;                   //Location in Mapping array to find Ascii char
+    String BrailleFile= new String();
+    BrailleFile="";
+
+    System.out.println("Reading File.....");
+
+    BufferedWriter out;
+	Mapping key;
+
+
+    try{//try 1
+	   System.out.println("First try statment began..");
+
+      FileInputStream fis = new FileInputStream(userInputFile);
+	  System.out.println("opened FileInputStream");
+
+	  InputStreamReader isr = new InputStreamReader(fis,"UTF8");
+      System.out.println("Opened InputSteamReader");
+
+      BufferedReader in = new BufferedReader(isr);
+      System.out.println("opened bufferedReader");
+
+
+	  while ((ch = in.read()) > -1) {
+	      key = new Mapping();
+		  key.numChar = ch;
+		  location = Arrays.binarySearch(MapArray, key , new Comparator() {
+          int firstNum, secondNum;
+          public int compare( Object o1, Object o2) {
+                  firstNum=Integer.parseInt( o1.toString());
+                  secondNum=Integer.parseInt(o2.toString());
+                  if(firstNum<secondNum)
+                      return -1;
+                  if(firstNum>secondNum)
+                      return +1;
+                  return 0;
+              }
+          });
+
+          if (location>=0)
+            BrailleFile=BrailleFile + (MapArray[location].BrailleChar);
+
+  	}//while
+
+      in.close();
+
+  }catch (IOException e){
+      System.out.println("Error Reading User Input File");
+      e.printStackTrace();
+
+    } //1  Try Catch
+
+
+      //All contractions from the basic hebrew -find and replace
+      BrailleFile = replaceAll(BrailleFile,"IJ","9"); //chirik Yud
+      BrailleFile = replaceAll(BrailleFile,"/J","#"); //Tzere Yud
+      BrailleFile = replaceAll(BrailleFile,"WO","["); //vav cholom
+      BrailleFile = replaceAll(BrailleFile,"W\"","+");//vav dagesh aka shuruk
+      BrailleFile = replaceAll(BrailleFile,"V\"","B");//vais dagesh aka Bais
+      BrailleFile = replaceAll(BrailleFile,"*\"","K");//chaf dagesh aka Kaf
+      BrailleFile = replaceAll(BrailleFile,"f\"","P");//fay dagesh aka Pay
+      BrailleFile = replaceAll(BrailleFile,"?\"","\\");//sav dagesh aka Tav
+      BrailleFile = replaceAll(BrailleFile,"%:",":");// shin with a sin dot is a sin
+      BrailleFile = replaceAll(BrailleFile,"H\"","^H");// hey dagesh aka mapik hey
+	try{
+		out = new BufferedWriter(new FileWriter(userOutputFile));
+      	out.write(BrailleFile);
+      	out.flush();
+      	out.close();
+    	} catch (IOException e){
+    	  System.out.println("Error writing output file");
+    } //2  Try Catch
+
+  }
+
+  /**
+  * Replaces the first occurence of a substring
+  * @param source string that needs to have stuff replaced
+  * @param oldVal name of variable in Source string
+  * @param newVal replacement to put in String
+  */
+  public static String replace(String source, String oldVal, String newVal)
+  {
+  if (oldVal == null) return source;
+
+  //cat.debug("replacing:" + oldVal + ": by :" + newVal + ":");
+  StringBuffer SB = new StringBuffer(source);
+  int nameindex = source.indexOf(oldVal);
+  SB.replace(nameindex, nameindex + oldVal.length(), newVal);
+  //cat.debug("new StringBuffer: "+SB);
+  return new String(SB);
+  }
+
+  /**
+  * Replaces all occurences of a substring
+  * @param source string that needs to have stuff replaced
+  * @param oldVal name of variable in Source string
+  * @param newVal replacement to put in String
+  */
+  public static String replaceAll(String source, String oldVal, String newVal)
+  {
+  while(source.indexOf(oldVal) != -1)
+  {
+  source = replace(source, oldVal, newVal);
+  }
+  return source;
+}
+
+}//end BrailleConversionServlet

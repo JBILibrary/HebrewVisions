@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app 
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" 
+    "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+
+    <display-name>Hebrew Visions -- JBI braille software</display-name>
+    <description>
+	Hebrew Visions -- JBI braille software
+    </description>
+
+    <servlet>
+        <servlet-name>BrailleConversionServlet</servlet-name>
+        <servlet-class>BrailleConversionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BrailleConversionServlet</servlet-name>
+        <url-pattern>/BrailleConversionServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>StringConversion</servlet-name>
+        <servlet-class>StringConversion</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StringConversion</servlet-name>
+        <url-pattern>/StringConversion</url-pattern>
+    </servlet-mapping>
+
+</web-app>

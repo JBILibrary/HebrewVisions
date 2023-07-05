@@ -1,0 +1,10 @@
+IJ=9                  //chirik Yud
+/J=#                  //Tzere Yud
+WO=[                  //vav cholom
+W"=+                  //vav dagesh aka shuruk
+V"=B                  //vais dagesh aka Bais
+*"=K                  //chaf dagesh aka Kaf
+F"=P                  //fay dagesh aka Pay
+?"=\                  //sav dagesh aka Tav
+%:=:                  // shin with a sin dot is a sin
+H"=^H                 // hey dagesh aka mapik hey

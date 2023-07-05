@@ -1,0 +1,275 @@
+               ACLEF B#?              #A
+
+A B V G D
+
+H W Z X T
+
+J K * * L
+
+M M N N S
+
+$ P F F ! !
+
+Q R % : \ ?
+
+< C E I /
+
+O [ U +
+
+> 3 5
+
+A9 A#
+
+
+
+                                      #A
+               ACLEF B#?              #B
+
+A< AC AE AI A/
+
+AO A[ AU A+
+
+A> A3 A5
+
+B< BC BE BI B/
+
+BO B[ BU B+
+
+V< VC VE VI V/
+
+VO V[ VU V+
+
+G< GC GE GI G/
+
+GO G[ GU G+
+
+D< DC DE DI D/
+
+DO D[ DU D+
+
+                                      #B
+               ACLEF B#?              #C
+H< HC HE HI H/
+
+HO H[ HU H+
+
+H> H3 H5
+
+W< WC WE WI W/
+
+WO W[ WU W+
+
+Z< ZC ZE ZI Z/
+
+ZO Z[ ZU Z+
+
+X< XC XE XI X/
+
+XO X[ XU X+
+
+X> X3 X5
+
+T< TC TE TI T/
+
+TO T[ TU T+
+                                      #C
+               ACLEF B#?              #D
+
+J< JC JE JI J/
+
+JO J[ JU J+
+
+K< KC KE KI K/
+
+KO K[ KU K+
+
+*< *C *E *I */
+
+*O *[ *U *+
+
+L< LC LE LI L/
+
+LO L[ LU L+
+
+M< MC ME MI M/
+
+MO M[ MU M+
+
+N< NC NE NI N/
+
+NO N[ NU N+                           #D
+               ACLEF B#?              #E
+
+S< SC SE SI S/
+
+SO S[ SU S+
+
+$< $C $E $I $/
+
+$O $[ $U $+
+
+$> $3 $5
+
+P< PC PE PI P/
+
+PO P[ PU P+
+
+F< FC FE FI F/
+
+FO F[ FU F+
+
+!< !C !E !I !/
+
+!O ![ !U !+
+
+                                      #E
+               ACLEF B#?              #F
+Q< QC QE QI Q/
+
+QO Q[ QU Q+
+
+R< RC RE RI R/
+
+RO R[ RU R+
+
+%< %C %E %I %/
+
+%O %[ %U %+
+
+:< :C :E :I :/
+
+:O :[ :U :+
+
+\< \C \E \I \/
+
+\O \[ \U \+
+
+?< ?C ?E ?I ?/
+
+?O ?[ ?U ?+
+                                      #F
+               ACLEF B#?              #G
+A< B< V< G< D< H< W< Z< X< T< J<
+
+K< *< L< M< N< S< $< P< F< !< Q<
+
+R< %< :< \< ?<
+
+AC BC VC GC DC HC WC ZC XC TC JC
+
+KC *C LC MC NC SC $C PC FC !C QC
+
+RC %C :C \C ?C
+
+AE BE VE GE DE HE WE ZE XE TE JE
+
+KE *E LE ME NE SE $E PE FE !E QE
+
+RE %E :E \E ?E
+
+AI BI VI GI DI HI WI ZI XI TI JI
+
+KI *I LI MI NI SI $I PI FI !I QI
+
+RI %I :I \I ?I
+                                      #G
+               ACLEF B#?              #H
+A/ B/ V/ G/ D/ H/ W/ Z/ X/ T/ J/
+
+K/ */ L/ M/ N/ S/ $/ P/ F/ !/ Q/
+
+R/ %/ :/ \/ ?/
+
+AO BO VO GO DO HO WO ZO XO TO JO
+
+KO *O LO MO NO SO $O PO FO !O QO
+
+RO %O :O \O ?O
+
+A[ B[ V[ G[ D[ H[ W[ Z[ X[ T[ J[
+
+K[ *[ L[ M[ N[ S[ $[ P[ F[ ![ Q[
+
+R[ %[ :[ \[ ?[
+
+AU BU VU GU DU HU WU ZU XU TU JU
+
+KU *U LU MU NU SU $U PU FU !U QU
+
+RU %U :U \U ?U
+                                      #H
+               ACLEF B#?              #I
+A+ B+ V+ G+ D+ H+ W+ Z+ X+ T+ J+
+
+K+ *+ L+ M+ N+ S+ $+ P+ F+ !+ Q+
+
+R+ %+ :+ \+ ?+
+
+A9 B9 V9 G9 D9 H9 W9 Z9 X9 T9 J9
+
+K9 *9 L9 M9 N9 S9 $9 P9 F9 !9 Q9
+
+R9 %9 :9 \9 ?9
+
+A# B# V# G# D# H# W# Z# X# T# J#
+
+K# *# L# M# N# S# $# P# F# !# Q#
+
+R# %# :# \# ?#
+
+
+
+
+
+
+                                      #I
+               ACLEF B#?             #AJ
+A<M B<M V<M G<M D<M
+
+H<M W<M Z<M X<M T<M
+
+J<M K<M *<M L<M M<M
+
+N<M S<M $<M P<M F<M
+
+!<M Q<M R<M %<M :<M
+
+\<M ?<M
+
+ACF BCF VCF GCF DCF
+
+HCF WCF ZCF XCF TCF
+
+JCF KCF *CF LCF MCF
+
+NCF SCF $CF PCF FCF
+
+!CF QCF RCF %CF :CF
+
+\CF ?CF
+                                     #AJ
+               ACLEF B#?             #AA
+ ACB<A
+
+ AIM<A
+
+ JELED
+
+ JCLD<H
+
+ M[R<H
+
+ MI%P<X<H
+
+  %MC$ JI:R<A/L JHWH A5LOH#N+ JHWH
+
+AEX<D4
+
+  \[R<H !IW<H L<N+ MO%EH M[R<%<H QHILC?
+
+JC$3QOV4
+
+
+
+
+                                     #AA

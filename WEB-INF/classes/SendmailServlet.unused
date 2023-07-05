@@ -1,0 +1,140 @@
+import java.io.IOException;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import javax.mail.*;
+import javax.mail.internet.*;
+import javax.mail.MessagingException;
+import java.io.UnsupportedEncodingException;
+import java.util.Properties;
+import javax.servlet.http.*;
+import javax.servlet.*;
+
+public class SendmailServlet extends HttpServlet {
+    protected ServletConfig _config;
+    protected Session _mailSession;
+    protected String _mailhost;
+    protected String _mailuser;
+    protected boolean _debug;
+
+    public SendmailServlet() {
+        _config = null;
+        _mailSession = null;
+        _mailhost = null;
+        _mailuser = null;
+    }
+
+    public void init(ServletConfig config) {
+        _config = config;
+        _mailhost = config.getInitParameter("mailhost");
+        _mailuser = config.getInitParameter("mailuser");
+    }
+
+    // doGet and doPost do the same thing
+    public void doGet(HttpServletRequest req, HttpServletResponse res)
+        throws IOException, ServletException {
+        doService(req, res);
+    }
+
+    public void doPost(HttpServletRequest req, HttpServletResponse res)
+        throws IOException, ServletException {
+        doService(req, res);
+    }
+
+    protected void doService(HttpServletRequest req,
+                             HttpServletResponse res)
+        throws IOException, ServletException {
+
+        res.setContentType("text/html");
+
+        // Get (or create and cache) mail session
+        Session s = getMailSession();
+
+        // If either init parameter or request
+        // parameter "debug" is set, output
+        // SMTP session log to server log.
+        boolean debug = false;
+        String sdebug = _config.getInitParameter("debug");
+
+        if (sdebug == null) {
+            sdebug = req.getParameter("debug");
+        }
+
+        if (sdebug != null &&
+            Boolean.valueOf(sdebug).booleanValue()) {
+            s.setDebug(true);
+        }
+
+        // Create new message
+        MimeMessage msg = new MimeMessage(s);
+
+        // Put data from request into message
+        try {
+            String messageText =
+                req.getParameter("messagetext");
+            msg.setText(messageText);
+
+            String subject = req.getParameter("subject");
+            if (subject != null) {
+                msg.setSubject(subject);
+            }
+
+            String addrFrom =
+                req.getParameter("addrfrom");
+            String nameFrom =
+                req.getParameter("namefrom");
+            Address fromAddr =
+                new InternetAddress(addrFrom, nameFrom);
+            msg.setFrom(fromAddr);
+
+            String addrto = req.getParameter("addrto");
+            String nameto = req.getParameter("nameto");
+            Address toAddr =
+                new InternetAddress(addrto, nameto);
+            msg.addRecipient(Message.RecipientType.TO, toAddr);
+
+            // Send the message
+            Transport.send(msg);
+
+            // Print a message acknowledging that the message
+            // was sent
+            PrintWriter pw = res.getWriter();
+            res.setContentType("text/html");
+            pw.println("<HTML><BODY>Email sent" +
+                       "</BODY></HTML>");
+
+        } catch (UnsupportedEncodingException e) {
+            System.err.println("Unsupported encoding: " +
+                               e.getMessage());
+        } catch (MessagingException m) {
+            System.err.println("Messaging exception: " +
+                               m.getMessage());
+        }
+
+     }
+
+    // Open the mail session if it isn't already open.
+    protected Session getMailSession()
+      throws ServletException {
+
+        // Throw exception if mail host or user are not set
+        if (_mailhost == null || _mailuser == null) {
+            throw new ServletException("SendmailServlet " +
+              "init parameters mailhost and mailuser must " +
+              "both be set in deployment descriptor");
+        }
+
+        // Create mail session if it doesn't exist
+        if (_mailSession == null) {
+            Properties p = new Properties();
+            p.put("mail.host", _mailhost);
+            p.put("mail.user", _mailuser);
+
+            // Can define and initialize other session
+            // properties here, if desired
+            _mailSession = Session.getDefaultInstance(p, null);
+        }
+        return _mailSession;
+    }
+
+}
+
