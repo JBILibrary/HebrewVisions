@@ -1,0 +1,175 @@
+
+ 
+ 
+<html> 
+<head> 
+<title>Library - JBI International</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+ 
+<link rel="stylesheet" type="text/css" href="inc/css/small.css" /> 
+<link rel="alternate stylesheet" type="text/css" media="screen" title="medium" href="inc/css/medium.css" /> 
+<link rel="alternate stylesheet" type="text/css" media="screen" title="large" href="inc/css/large.css" /> 
+ 
+<script src="inc/scripts/styleswitch.js" type="text/javascript"></script> 
+ 
+<script src="inc/scripts/AC_RunActiveContent.js" type="text/javascript"></script> 
+<script src="inc/scripts/formcheck.js" type="text/javascript"></script> 
+ 
+<base href="http://www.jbilibrary.org/"> 
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-12973129-1");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+</head> 
+<body><center> 
+<!-- ImageReady Slices (index_sliced.psd) --> 
+ 
+<table cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;"> 
+  <tr><td align="right" valign="top" style="background-color:#7d7d7d;"> 
+ 
+<img src="images/index_sliced_02.jpg" alt="" width="13" height="656" border="0"> 
+ 
+ 
+    
+    
+    
+    
+ </td> 
+    <td align="left" valign="top"> 
+    
+<!-- HEADER START --> 
+    
+       <table cellpadding="0" cellspacing="0"><tr><td colspan="8" align="left" valign="top"><a href="http://www.jbilibrary.org/index.php?sub=0&op=0" title="JBI International - Home" id="tab1"><img src="images/index_sliced_03.jpg" alt="JBI International - Home" width="448" height="113" border="0"></a><img src="images/index_sliced_04.jpg" alt="" width="400" height="113" border="0" usemap="#Map"></td> 
+    <td valign="top"><a href="http://www.jbilibrary.org/interior1.php?sub=8&op=0" title="Espanol" id="tab2"><img src="images/espanol.jpg" alt="Espanol" width="141" height="56" border="0"></a><br> 
+<a href="http://www.jbilibrary.org/interior1.php?sub=9&op=0" title="Cyrillic" id="tab3"><img src="images/russian.jpg" alt="Cyrillic" width="141" height="57" border="0"></a></td> 
+</tr></table> 
+<map name="Map" id="Map"><area shape="rect" coords="4,12,136,100" alt="Tyler, age 14, reading from his Braille Haggadah" /> 
+<area shape="rect" coords="135,13,266,99" alt="Rochelle, who lost her vision later in life, enjoys JBI Talking Books" /> 
+<area shape="rect" coords="267,11,398,98" alt="A young child named Lotem is able to see the printed page thanks to customized lenses created by the team at the JBI Low Vision Clinic in Tel Aviv" /> 
+</map> 
+<!-- HEADER END --> 
+    
+<!-- MENU START --> 
+  
+ 	<table cellpadding="0" cellspacing="0"> 
+  <tr> 
+    <td align="left" valign="top"><a href="http://www.jbilibrary.org/index.php?sub=0" title="Home" id="tab4" class="navlink"><img src="/images/btn1.jpg" border="0" alt="Home"></a><img src="/images/index_sliced_09.jpg" border="0" alt=""></td> 
+    <td align="left" valign="top"><a href="http://www.jbilibrary.org/interior.php?sub=1&op=1" title="About JBI" id="tab5" class="navlink"><img src="/images/btn2.jpg" border="0" alt="About JBI"></a><img src="/images/index_sliced_09.jpg" border="0" alt=""></td> 
+    <td align="left" valign="top"><a href="http://www.jbilibrary.org/interior.php?sub=2" title="Library" id="tab6" class="navover"><img src="/images/btn3.jpg" border="0" alt="Library"></a><img src="/images/index_sliced_09.jpg" border="0" alt=""></td> 
+    <td align="left" valign="top"><a href="http://www.jbilibrary.org/interior.php?sub=2&op=2" title="View Catalog" id="tab7" class="navlink"><img src="/images/btn4.jpg" border="0" alt="View Catalog"></a><img src="/images/index_sliced_09.jpg" border="0" alt=""></td> 
+    <td align="left" valign="top"><a href="http://www.hebrewvisions.org" title="Downloadable Braille Library" target="_blank" id="tab8"><img src="/images/btn5.jpg" border="0" alt="Downloadable Braille Library"></a><img src="/images/index_sliced_09.jpg" border="0" alt=""></td> 
+    <td align="left" valign="top"><a href="http://www.jbilibrary.org/interior1.php?sub=4" title="JBI Worldwide" id="tab9" class="navlink"><img src="/images/btn6.jpg" border="0" alt="JBI Worldwide"></a><img src="/images/index_sliced_09.jpg" border="0" alt=""></td> 
+    <td align="left" valign="top"><a href="http://www.jbilibrary.org/interior.php?sub=5" id="tab10" title="Donate Now" class="navlink"><img src="/images/btn7.jpg" border="0" alt="Donate Now"></a><img src="/images/index_sliced_09.jpg" border="0" alt=""></td> 
+    <td align="left" valign="top"><a href="http://www.jbilibrary.org/interior1.php?sub=6" id="tab11" title="Volunteer" class="navlink"><img src="/images/btn8.jpg" border="0" alt="Volunteer"></a><img src="/images/index_sliced_09.jpg" border="0" alt=""></td> 
+    <td align="left" valign="top"><a href="http://www.jbilibrary.org/interior1.php?sub=7"id="tab12" title="Contact Us" class="navlink"><img src="/images/btn9.jpg" border="0" alt="Contact Us"></a></td> 
+  </tr> 
+</table> 
+<!-- MENU END --> 
+    
+<!-- SEARCH AND TEXT SIZE START --> 
+    
+ 	
+<form action="interior.php?sub=14" id="cse-search-box" name="customsearch" method="post" > 
+ <table cellpadding="0" cellspacing="0" width="100%" style="background-color:#FFFFFF;"><tr><td> 
+    
+    <table><tr><td> 
+    
+ 
+    
+    Search the site: </td> 
+      <td><input name="q" type="text" class="forminp"></td> 
+      <td><img src="images/go_btn.jpg" width="32" height="20" onclick="document.customsearch.submit();" style="cursor:pointer;" alt="go"></td> 
+    </tr></table> 
+    
+    </td> 
+        <td><img src="images/index_sliced_26.jpg" width="433" height="56" alt=""></td> 
+        <td><img src="images/text_label.jpg" alt=""><a href="javascript:chooseStyle('none', 60)" checked="checked"><img src="images/text_small.jpg" alt="text size small" border="0"></a><a href="javascript:chooseStyle('medium', 1)"><img src="images/text_medium.jpg" alt="text size medium" border="0"></a><a href="javascript:chooseStyle('large', 60)"><img src="images/text_large.jpg" alt="text size large" border="0"></a></td> 
+    </tr></table> 
+    
+     </form> 
+     
+   
+<!-- SEARCH AND TEXT SIZE END --> 
+    
+    
+        <table cellpadding="0" cellspacing="0" width="100%"><tr><td rowspan="9" valign="top" style="width:11px; background-color:#FFFFFF;"><img src="images/index_sliced_28.jpg" width="11" height="392" alt=""></td> 
+            <td valign="top" style="width:306px; background-color:#FFFFFF;"></td> 
+        <td rowspan="9" valign="top" style="width:10px; background-color:#FFFFFF;"><img src="images/index_sliced_30.jpg" width="10" height="392" alt=""></td> 
+        <td rowspan="9" valign="top" style="background-color:#FFFFFF;"> 
+        <!-- BODY CONTENT START --> 
+<table width="630px"><tr><td> 
+<h1>Hebrew Visions</h1> 
+
+
+/div> 
+        <!-- BODY CONTENT END --> 
+        
+        </td> 
+        </tr> 
+         
+          <tr> 
+            <td valign="top" style="background-color:#FFFFFF;"> 
+                     
+                       
+<!-- SUBNAV START --> 
+    
+ 	           
+ 
+             <table width="100%"><tr><td valign="middle" style=" padding:5px; background-color:#407d7e; color:#FFFFFF;"><strong>Library:</strong></td></tr></table> 
+            <table width="100%"><tr><td valign="middle" style="border:#CCCCCC solid 1px; padding:5px;"><a href="interior.php?sub=2&op=1" style="text-decoration:none;">Circulating Library</a></td></tr></table> 
+            <table width="100%"><tr><td valign="middle" style="border:#CCCCCC solid 1px; padding:5px;"><a href="interior.php?sub=2&op=2" style="text-decoration:none;">Catalogs</a></td></tr></table> 
+            <table width="100%"><tr><td valign="middle" style="border:#CCCCCC solid 1px; padding:5px;"><a href="interior.php?sub=2&op=3" style="text-decoration:none;">Audio and Braille Magazines</a></td></tr></table> 
+            <table width="100%"><tr><td valign="middle" style="border:#CCCCCC solid 1px; padding:5px;"><a href="interior.php?sub=2&op=5" style="text-decoration:none;">Cultural Programs</a></td></tr></table> 
+			<table width="100%"><tr><td valign="middle" style="border:#CCCCCC solid 1px; padding:5px;"><a href="interior.php?sub=2&op=6" style="text-decoration:none;">Educational Materials</a></td></tr></table> 
+			<table width="100%"><tr><td valign="middle" style="border:#CCCCCC solid 1px; padding:5px;"><a href="interior.php?sub=2&op=7" style="text-decoration:none;">Liturgical, Biblical, and Lifecycle Materials</a></td></tr></table> 
+			<table width="100%"><tr><td valign="middle" style="border:#CCCCCC solid 1px; padding:5px;"><a href="interior.php?sub=2&op=8" style="text-decoration:none;">Eligibility and Registration</a></td></tr></table> 
+ 
+            
+            <a href="https://www.jbilibrary.org/interior.php?sub=5&op=6" title="Make A Difference - Donate Now"><img src="images/index_sliced_40.jpg" width="306" height="100" alt="Make A Difference - Donate Now" border="0"></a></td> 
+          </tr> 
+        </table>   
+<!-- SUBNAV END --> 
+ 
+ 
+    
+    
+    
+        <table cellpadding="0" cellspacing="0" width="100%" style="background-color:#FFFFFF;"> 
+          <tr><td><img src="images/index_sliced_41.jpg" width="989" height="15" alt=""><br><img src="images/index_sliced_42.jpg" width="989" height="5" alt=""></td> 
+        </tr> 
+          <tr> 
+           <td align="left" valign="top" class="footer"> 
+                      <!-- FOOTER START --> 
+            
+ 	<table width="100%"><tr><td width="36%"> 
+            
+            
+            Copyright &copy; 2010 JBI International
+            
+            </td> 
+                <td width="12%" align="center"><a href="interior1.php?sub=15">Privacy Policy</a></td> 
+                <td width="52%" align="right">110 East 30th Street, New York, NY 10016 (212) 889 2525</td> 
+</tr></table> 
+            
+            <!-- FOOTER END --> 
+            
+            
+            </td> 
+          </tr> 
+        </table> 
+    
+    </td> 
+    <td align="left" valign="top" style="background-color:#7d7d7d;"><img src="images/index_sliced_06.jpg" alt="" width="13" height="656" border="0"></td> 
+  </tr></table> 
+ 
+ 
+ 
+ 
+<!-- End ImageReady Slices --> 
+</center></body> 
+</html> 

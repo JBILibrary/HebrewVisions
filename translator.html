@@ -1,0 +1,133 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+  <head> 
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /> 
+    <meta name="generator" content="Windows Notepad" /> 
+    <link rel="stylesheet" type="text/css" href="hv.css" title="HV stylesheet" /> 
+    <link rel="stylesheet" type="text/css" href="color-scheme.css" title="HV color stylesheet" /> 
+	<META NAME="Description" CONTENT="
+	Free Hebrew Braille Translation Program as well as a Hebrew Braille Digital Library in accepted Hebrew Braille format. HebrewVisions.org is a website dedicated to making Jewish Hebrew texts accessible to Braille users in Hebrew Braille.  Many texts have been preformatted, can be downloaded in Braille format, and can then be sent to an embosser.  There is also a text conversion page, which allows anyone to upload a Hebrew text file to be converted to a Braille text file for embossing. This service is free, no charge."> 
+	<META NAME="KEYWORDS" CONTENT="Braille, Hebrew, Translation, Conversion, Embosser, Blind, Blindness, Jewish, Text, Books, Computer, Transcribe, Free, no charge, Israel, language, disabilities"> 
+    <title>Hebrew Braille Translation Program &nbsp;&nbsp;::&nbsp;&nbsp; HebrewVisions.org / Sponsored by JBI International</title> 
+ 
+<script language="javascript" type="text/javascript"> 
+<!--
+// this function calls a popupWindow where
+// win is the page address i.e. '../page.htm'
+// and must be specified when the function is called
+function popupWindow(win){
+ 
+	newWindow = window.open(win,'newWin','toolbar=no,location=no,scrollbars=yes,resizable=no,width=350,height=400');
+	newWindow.focus();
+}
+ 
+function clickPaste() {
+   		if(window.clipboardData.getData("Text")!=null)
+   			HebrewTextForm.file.value = window.clipboardData.getData("Text");
+   		else
+   			alert('There is no text to paste. \nConsult the Help files for additional information on "How To Copy Text."');
+}
+ 
+ function ok(maxchars) {
+ if(HebrewTextForm.file.value.length > maxchars) {
+   alert('Too much data in the text box! \nThe program has been limited to accept no more than 50,000 characters.\nPlease remove '+
+    (HebrewTextForm.file.value.length - maxchars)+ ' characters.');
+   return false; }
+ else if(HebrewTextForm.file.value ==''){
+ 	alert('You have not entered text into the text area.\nPlease paste or enter text before clicking on the "Translate Text" button.');
+ 	return false;}
+ else
+   return true; }
+// --></script> 
+ 
+ 
+  </head> 
+ 
+  <body> 
+    <div id="top"></div> 
+ 
+    <!-- ###### Header ###### --> 
+ 
+    <div id="header"> 
+      <a href="./index.html"><Img Src="hv_logo.gif" Border=0 Align=left Alt="Hebrew Visions .org Logo" WIDTH=354 HEIGHT=90></a> 
+    <a href="http://www.jbilibrary.org"><Img Src="jbi_logo.gif" Border=0 Align=right Alt="Sponsored by JBI International - Established in 1931 as the Jewish Braille Institute. -- JBI Logo" WIDTH=341 HEIGHT=90></a> 
+	</div> 
+ 
+    <div class="menuBar"> 
+    <BR Clear=all> 
+    </div> 
+ 
+     <!-- ** Left Sidebar ** --> 
+ 	<div class="leftSideBar"> 
+       <div class="sideBarTitle">HebrewVisions.org</div> 
+       <BR><a href="index.html">Welcome</a> 
+       <BR><a href="digital.html">Digital Library</a> 
+       <BR><a href="translator.html">Translator</a> 
+       <BR><a href="feedback.html">Feedback</a> 
+ 	   <BR><a href="about.html">About Us</a> 
+ 
+       <BR><div class="sideBarTitle">Help & Information</div> 
+       <BR><a href="help.html">About the Site</a> 
+       <BR><a href="help2.html">Translator Help</a> 
+ 
+       <BR><div class="sideBarTitle">Resources</div> 
+       <BR><a href="http://www.jbilibrary.org">JBI Library</a> 
+       <BR><a href="links.html">Links</a> 
+       <BR> 
+    </div> 
+ 
+ 
+    <!-- ** Body Text ** --> 
+ 
+    <div id="bodyText"> 
+      <h1 id="Translator" style="border-top: none; padding-top: 0;">The Translator:</h1> 
+      <h3>A Hebrew Braille Translation Program</H3></Font> 
+	  The Translator takes digital hebrew text and translates it into Computer Braille so that it may be sent to an embosser or read on a refreshable Braille display.
+	  <P>By using this site, you agree to our <a href="javascript:popupWindow('disclaimer.html')">Terms of Use</a>.
+ 
+	  <h3>Instructions:</h3> 
+	<OL> 
+	<LI>The Translator only translates <B> Hebrew </b> text, English characters will not be translated.
+	<LI>While your word processor is open, <a href="help2.html#2">copy</a> the <a href="help2.html#3">hebrew text</a> you wish to translate.
+	<LI>Paste the text you have copied in the Text Area below. This can be done by clicking on the button labeled "Paste Clipboard Text."
+	<LI>Alternatively, instead of copying and pasting text as outlined in steps one and two, you may type your hebrew text directly in the text area.
+	<LI>Click on the button labeled "Translate Text."
+	<LI>After a brief delay, you will be prompted to download the <A HREF="help.html#3">computer Braille</a> file. You will be able to save it to your computer or open it.
+	<LI>Please go to the <a href="feedback.html">feedback form</a> to send us your comments.
+	</OL> 
+	  <CENTER> 
+	  	<FORM Name="HebrewTextForm"
+	  	 method="POST" ACTION="/HebrewVisions/StringConversion" accept-charset="UTF-8" onsubmit="return ok(50000)"> 
+	  	<input type=button value="Paste Clipboard Text" onclick='clickPaste()'> 
+	  	<BR> 
+	  	<BR> 
+	  	<Textarea rows=10 cols=40 name="file" Align="right" dir="rtl"></textarea> 
+	  	<BR> 
+	  	<BR> 
+	  	<INPUT TYPE="submit" VALUE="Translate Text"> 
+	  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=reset value="Clear Text Area"> 
+	  	</FORM> 
+</CENTER> 
+<P> 
+<P> 
+<P> 
+<hr/> 
+<P> 
+<B>Advanced Users:</B> 
+<BR/><a href="utf_trans.html">A UTF-8 File upload</a> option is also available.
+<P> 
+<P> 
+<P> 
+<CENTER><A HREF="javascript:history.go(-1)"> [Go Back]</A></CENTER> 
+ 
+</div> 
+    <!-- ** Footer ** --> 
+ 
+    <div id="footer"> 
+	<div> 
+        <a href="javascript:popupWindow('disclaimer.html')">Terms of Use</a> 
+		<BR>Questions or comments: <A HREF="mailto:Webmaster@HebrewVisions.org"> Webmaster@HebrewVisions.org </A> 
+		<div class="copyright">Copyright &copy; 2003-2006, <A Href="http://www.rhine.us/main.html"> Jonathan Rhine </A></div> 
+      </div> 
+    </div> 
+  </body> 
+</html>
